@@ -1,0 +1,1015 @@
+@import "menu.css";
+@import "dinks.css";
+@import "pastry.css";
+@import "view-cart.css";
+body {
+    font-family: 'Noto Serif', serif;
+}
+/* html {
+    scroll-behavior: smooth;
+  } */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #92e8db;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
+/* ==========================TOP HEADER =========================*/
+
+.opening {
+    float: left;
+    border-left: 1px solid #434343;
+    padding-left: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin-right: 140px;
+}
+
+.follow {
+    float: left;
+}
+
+.cart.follow {
+    margin-left: 30px;
+    border-left: 1px solid #434343;
+    padding-left: 23px;
+    top: 0px;
+    right: 0px;
+}
+
+.follow a {
+    color: #dddddd;
+    padding: 0px 13px;
+    text-decoration: none;
+}
+
+.callMe {
+    float: left;
+    border-left: 1px solid #434343;
+    margin-left: 17px;
+    padding-left: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.topHeader {
+    height: 40px;
+    line-height: 40px;
+    background-color: #222222;
+    color: #dddddd;
+}
+
+
+/* ===============================END TOP HEADER =========================*/
+
+.nav-menu-slider {
+    position: relative;
+}
+
+
+/* ==============================NAV-MENU=============================== */
+
+li.nav-item a.nav-link::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    transition: 0.5s;
+    background-color: #ffba00;
+    display: block;
+}
+
+li.nav-item a.nav-link:hover::after {
+    width: 100% !important;
+}
+
+li.nav-item a {
+    color: #fff !important;
+    font-family: 'Noto Serif', serif;
+}
+
+li.nav-item.active a.nav-link,
+li.nav-item:hover a.nav-link {
+    color: #ffba00 !important;
+}
+
+.navbar-nav li.nav-item {
+    margin: 0px 17px;
+}
+
+li.nav-item.active {
+    color: #ffba00 !important;
+}
+
+ul.navbar-nav.mr-auto {
+    margin: 0px auto;
+}
+
+div#nav-menu {
+    text-align: center;
+}
+
+a.navbar-brand {
+    padding: 0px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0px;
+    height: 65px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    background: #534e4e8f !important;
+    opacity: 0.8;
+}
+
+
+/*============================== END NAV-MENU ====================*/
+
+
+/* ===============================SLIDER========================= */
+
+a.carousel-control-prev,
+a.carousel-control-next {
+    position: absolute;
+    z-index: 20;
+}
+
+.opacity-slider {
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    background: #000;
+    z-index: 4;
+    opacity: 0.2;
+    top: 0px;
+}
+
+.introduce p {
+    font-size: 19px;
+}
+
+.introduce h1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.introduce {
+    position: absolute;
+    left: 360px;
+    top: 235px;
+    color: #f6ebeb;
+    width: 643px;
+    height: 185px;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 20;
+    animation: zoom 2s;
+}
+
+@keyframes zoom {
+    0% {
+        top: 100%
+    }
+    ;
+    50% {
+        top: 235px
+    }
+}
+
+span.icon-control {
+    background-color: #bcb4ac;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 27px;
+}
+
+
+/*============================== END-SLIDER =================*/
+
+
+/* ==============================MENU=========================== */
+
+a.menu-view {
+    display: block;
+    margin: 0px auto;
+    border: 1px solid #52331d;
+    width: 135px;
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #52331d;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Noto Serif', serif;
+    transition: 0.4s;
+}
+
+a.menu-view:hover {
+    color: #fff;
+    background: #52331d;
+}
+
+div.menu-info span.price {
+    float: right;
+    color: #878787;
+    padding-top: 4px;
+}
+
+.menu-info {
+    margin-top: 10px;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.menu-info p {
+    font-size: 16px;
+    clear: both;
+    float: left;
+    color: #979191;
+}
+
+.menu-info div.title {
+    float: left;
+    
+    font-size: 20px;
+    color: #646464;
+}
+
+ul.menu-img {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+ul.menu-img img {
+    transition: 0.4s;
+    width: 100%;
+
+}
+
+ul.menu-img li {
+    width: 33%;
+    overflow: hidden;
+    animation : test 1s ease-out;
+}
+@keyframes test{
+    0%{
+        transform: scale(0) skew(10deg, 45deg);
+        /* transform:translate(-50%,150%); */
+    }
+    100%{
+        transform: scale(1) skew(0deg, 0deg);
+        /* transform:translate(0,0); */
+    }
+}
+
+
+.menu {
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+}
+
+.menu ul.nav-menu, .menu ul.index-menu {
+    margin: 20px auto;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+.menu ul.nav-menu li.active , .menu ul.index-menu li.active {
+    background: #52331d;    
+    padding: 0px 5px;
+    
+}
+.menu ul.nav-menu li.active a, .menu ul.index-menu li.active a{
+    color: #fff;
+}
+.menu ul li a {
+    font-size: 21px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+    color: #52331d;
+    text-decoration: none;
+    transition: 0.6s;
+    display: block;
+    padding: 3px 7px;
+}
+
+/* .menu ul li a:focus {
+    background: #52331d;
+    color: #fff;
+} */
+
+.nav-menu li a:hover, .index-menu li a:hover {
+    transform: scale(1.3);
+}
+
+.menu .row {
+    text-align: center;
+}
+
+.menu h1 {
+    width: 100%;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #52331d;
+}
+
+.background-cart {
+    position: absolute;
+    background: #a29696;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.box-cart:hover .background-cart {
+    opacity: 0.4;
+}
+
+.cart-btn {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    z-index: 10;
+}
+
+.cart-btn button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    transition: 0.4s;
+    background-color: rgba(96, 75, 67, 0.7);
+    transform: scale(0);
+    font-size: 25px;
+    color: #dddddd;
+    transition: 0.4s;
+    word-spacing: 5px;
+    outline: 0;
+}
+
+.cart-btn:hover {
+    background-color: rgba(96, 75, 67, 1);
+}
+
+.box-cart {
+    position: relative;
+    width: 336px;
+    height: 215px;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+}
+
+.box-cart:hover button {
+    /* opacity: 1; */
+    transform: scale(1);
+}
+
+.box-cart:hover img {
+    transform: scale(1.3);
+}
+
+
+/*=========================== END MENU ==========================*/
+
+
+/* ===========================DRINK========================= */
+
+a.icon-prev,
+a.icon-next {
+    width: 30px;
+    height: 30px;
+    background-color: #a0a0a0;
+    display: block;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    transition: 0.4s;
+}
+
+a.icon-prev:hover,
+a.icon-next:hover {
+    background-color: #494545;
+}
+
+a.icon-prev {
+    margin-right: 10px;
+}
+
+.introduce_drinks .bottom-drink,
+.introduce_pastry .bottom-pastry {
+    margin-top: 26px;
+    position: relative;
+}
+
+.top-drink,
+.top-pastry {
+    border-bottom: 1px solid #766f6f;
+}
+
+.bottom-drink span.price-drink,
+.bottom-pastry span.price-pastry {
+   	position: absolute;
+   	right : 0;
+    color: #646464;
+    font-size: 16px;    
+    transition: 0.5s ease-out;
+    z-index : 10;
+}
+
+.bottom-drink span.name-drink,
+.bottom-pastry span.name-pastry {
+    text-align: left;
+    float: left;   
+    color: #646464;
+    font-size: 19px;
+    width: 80%;
+    
+}
+.bottom-drink , .bottom-pastry {
+    overflow: hidden;
+}
+.bottom-drink ul li,
+.bottom-pastry ul li {
+    list-style: none;
+    width: 47%;
+    height:80px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+    animation: liOddMove 0.8s  ease-out;
+}
+
+.bottom-drink ul li:nth-child(even),
+.bottom-pastry ul li:nth-child(even) {
+    float: right;
+    animation: liEvenMove 0.8s ease-out;
+}
+
+@keyframes liOddMove{
+    0%{transform: translateX(-100%)}
+    100%{transform: translate(0)}
+}
+@keyframes liEvenMove{
+    0%{transform: translateX(100%)}
+    100%{transform: translate(0)}
+}
+
+.introduce_drinks .top-drink p,
+.introduce_pastry .top-pastry p {
+    text-align: left;
+    font-size: 16px;
+    color: #9c9797;
+    margin-bottom: 25px;
+}
+
+.bottom-drink p.info-drink,
+.bottom-pastry p.info-pastry {
+    clear: both;
+    text-align: left;
+    font-size: 16px;
+    color: #9b9292;    
+    white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis;
+    transition : 5s ease-out;
+}
+
+.introduce_drinks h3,
+.introduce_pastry h3 {
+    text-align: left;
+    clear: both;
+    font-size: 20px;
+    color: #646464;
+}
+
+.nav-drink li a,
+.nav-pastry li a {
+    text-decoration: none;
+    color: #52331d;
+    font-size: 20px;
+    transition: 0.4s ease-in;
+    display: block;
+}
+
+.nav-drink li a:hover,
+.nav-pastry li a:hover {
+    transform: scale(1.3);
+}
+
+.nav-drink li,
+.nav-pastry li {
+    list-style: none;
+    padding: 0px 15px;
+    display: inline-block;
+    transition: 0.5s ease-out;
+}
+
+.nav-drink li.active,
+.nav-pastry li.active {
+    background-color: #52331d;
+}
+
+.nav-drink li.active a,
+.nav-pastry li.active a {
+    color: #fff;
+}
+
+.drinks_title,
+.pastry_title {
+    float: left;
+    background: url("./../images/drinks/drinks-icon-cf_03.png") 6px 8px no-repeat;
+    padding: 13px 0px 0px 47px;
+    position: relative;
+    left: -8px;
+    top: -18px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #52331d !important;
+    font-weight: 500;
+}
+
+a.drinks_title:hover,
+a.pastry_title:hover {
+    text-decoration: none;
+}
+
+.introduce_drinks,
+.introduce_pastry {
+    padding: 40px 60px 30px 30px;
+    text-align: center;
+    width: 696px;
+    /*font-family: 'Roboto', sans-serif;*/
+    position: relative;
+}
+
+.introduce_pastry {
+    padding: 60px 30px 0px 100px;
+}
+
+.icon-prev-next {
+    position: absolute;   
+    display: flex;
+    bottom: 10px;
+    right: 55px;
+}
+
+.introduce_pastry .icon-prev-next {
+    left: 527px;
+    bottom: 0px;
+}
+
+
+/*============================= END DRINK========================*/
+
+
+/*============================= PASTRY======================= */
+
+.img-pastry img {
+    padding-right: 30px;
+}
+
+.img-pastry img:nth-child(1) {
+    float: left;
+    padding-bottom: 30px;
+}
+
+.img-pastry img:nth-child(2) {
+    float: right;
+    margin-right: 82px;
+}
+
+.img-pastry {
+    padding-top: 65px;
+    position: relative;
+    display: inline-block;
+    width: 683px;
+}
+
+.pastrys {
+    background-color: #f0f0f0;
+    padding-bottom: 60px;
+}
+
+.pastry_title {
+    background: url("./../images/pastry/icon-pastry_03.png") 8px 11px no-repeat;
+}
+
+
+/* ==============================END PASTRY========================= */
+
+
+/*========================== CONTACT======================= */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact button {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background: #52331d;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+    border: 0px;
+}
+
+.contact button:hover {
+    background: #826753;
+    color: #fff;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 130px;
+    padding: 5px 15px;
+    border: 1px solid #52331d;
+    transition: 0.5s;
+}
+
+.contact textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.contact h3 {
+    font-size: 30px;
+    color: #52331d;
+    margin-bottom: 30px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact input[type="text"] {
+    height: 45px;
+    width: 100%;
+    display: block;
+    padding: 5px 15px;
+    margin: 0px auto;
+    transition: 0.5s;
+    font-size: 16px;
+    border: 1px solid #52331d;
+    margin-bottom: 20px;
+}
+
+.contact input[type="text"]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+
+/* =========================END CONTACT======================== */
+
+
+/* ===============================FOOTER=========================== */
+
+.footer .description p {
+    font-size: 16px;
+    margin: 0px;
+    color: #878585;
+}
+
+.footer .description h3 {
+    font-size: 20px;
+    color: #707070;
+}
+
+.footer .description {
+    margin-top: 25px;
+}
+
+.subscribe a {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.subscribe a:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+.subscribe a img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.footer .subscribe a {
+    margin-right: 30px;
+}
+
+.footer {
+    height: 300px;
+    text-align: center;
+    padding: 70px;
+    background: #f0f0f0;
+    margin-top: 80px;
+}
+
+
+/* ===============================END FOOTER============================== */
+
+@media(max-width:576px) {
+    * {}
+    .pastry-page h3.title {
+        margin-top: 40px;
+    }
+    .pastry-page .info-pastry {
+        padding: 0px 30px 0px 20px;
+    }
+    .item-pastry p.description {
+        margin-top: 10px;
+    }
+    p.pastry-name {
+        margin-bottom: 5px;
+        top: -5px;
+        position: relative;
+    }
+    .pastry-page .item-pastry img {
+        width: 30%;
+    }
+    .pastry-page .info-pastry {
+        width: 70%;
+    }
+    .pastry-page li.item-pastry {
+        width: 100%;
+    }
+    .pastry-page {
+        width: 100%;
+        padding: 20px;
+    }
+    h3.title {
+        text-align: center;
+    }
+    .coffee,
+    .frappe {
+        height: unset !important;
+    }
+    .list-coffee,
+    .list-frappe,
+    .list-juice {
+        width: 100% !important;
+        position: unset !important;
+        left: 0px !important;
+        top: unset !important;
+        box-sizing: border-box !important;
+        padding: 30px 40px !important;
+    }
+    .img-coffee,
+    .img-frappe {
+        right: unset !important;
+        position: unset !important;
+        float: unset !important;
+    }
+    .contact .col-md-6.form-contact {
+        margin-top: 30px;
+    }
+    .contact button {
+        width: 100%;
+    }
+    .contact textarea {
+        width: 100%;
+    }
+    .contact input[type="text"] {
+        width: 100%;
+    }
+    .subscribe img {
+        width: 44px;
+    }
+    .subscribe a img:nth-child(2) {
+        opacity: 1;
+    }
+    .footer {
+        padding: 35px;
+    }
+    .subscribe a {
+        width: 20px;
+        height: 25px;
+    }
+    .pastry {
+        margin-top: 50px;
+    }
+    .img-pastry {
+        padding-top: 0px;
+    }
+    .bottom-pastry ul {
+        height: 451px;
+    }
+    .img-pastry img:nth-child(3) {
+        width: 41%;
+    }
+    .img-pastry img {
+        padding: 6px !important;
+        padding-bottom: 5px !important;
+    }
+    .img-pastry img:nth-child(1) {
+        width: 41%;
+    }
+    .img-pastry img:nth-child(2) {
+        width: 56%;
+        margin-right: 9px;
+    }
+    .icon-prev-next {
+        bottom: -443px;
+        left: 40%;
+    }
+    .bottom-pastry .icon-prev-next {
+        left: 40%;
+        bottom: -25px;
+    }
+    a.drinks_title,
+    a.pastry_title {
+        left: 26%;
+        top: -37px;
+    }
+    .introduce_drinks,
+    .introduce_pastry {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .bottom-drink ul li,
+    .bottom-pastry ul li {
+        width: 100%;
+    }
+    ul.nav-drink,
+    ul.nav-pastry {
+        clear: both;
+    }
+    .nav-drink li a,
+    .nav-pastry li a {
+        font-size: 15px;
+    }
+    .drinks img {
+        width: 375px;
+        height: 299px;
+        display: none;
+    }
+    div.img-coffee img,
+    div.img-frappe img {
+        width: 100%;
+    }
+    .menu-info p.description {
+        font-size: 13px;
+    }
+    div.menu-img span.price {
+        font-size: 15px;
+    }
+    .menu-info div.title {
+        font-size: 16px;
+    }
+    ul.menu-img li {
+        width: 100%;
+    }
+    .menu ul li a {
+        font-size: 12px;
+    }
+    .opacity-slider {
+        display: none;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        position: relative;
+        background-color: #fff !important;
+        height: auto;
+    }
+    .introduce {
+        left: 20%;
+        padding: 5px;
+        width: 60%;
+        height: 58%;
+        top: 24%;
+        display: none;
+    }
+    .navbar-collapse a.nav-link {
+        color: #52331d !important;
+    }
+    ol.carousel-indicators {
+        display: none;
+    }
+    li.nav-item a.nav-link::after {
+        display: none;
+    }
+    span.icon-control {
+        width: 37px;
+        height: 37px;
+        font-size: 18px;
+        line-height: 37px;
+    }
+    .carousel-item img {
+        width: 100%;
+    }
+    .navbar-nav li.nav-item {
+        margin: -0.8px;
+        border-bottom: 1px solid #dddddd;
+    }
+    .cart.follow {
+        border: none;
+        padding: 0px;
+        float: right;
+        margin: 0px;
+    }
+    .opening {
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .callMe.float-xs-right {
+        float: right;
+        padding-right: 5px;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .topHeader {
+        height: auto;
+    }
+}
+.back-to-top{
+	position: fixed;
+	right:10px;
+	bottom: 50px;
+	width : 50px;
+	height :50px;	
+	color : white;
+	border-radius: 5px;	
+	text-align : center;
+	line-height: 50px;	
+	background: #DDDDDD;   
+    transition: 0.5s ease-out;
+    box-shadow: inset 0 7px 29px 8px rgba(0, 0, 0, 0.5), 0 6px 33px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    z-index:10000;
+    /*animation : move-top 1s ease-out;*/
+    transition : 1s ease-out;
+    transform: translateX(200%);
+}
+
+.back-to-top:hover{
+	background: #52331D;
+}
+
+@keyframes move-top{
+	0%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+.error-val {
+    color: red !important;
+    font-size: 14px;
+    margin-left: 20px;
+    position: relative;
+    right: -280px;
+    top: 31px;
+}

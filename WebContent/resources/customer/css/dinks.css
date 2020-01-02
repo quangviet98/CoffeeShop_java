@@ -1,0 +1,254 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-juice {
+    width: 50%;
+    left: 0px;
+    /* position: absolute; */
+    text-align: center;
+}
+
+.list-juice ul.list-scroll {
+    margin: 0px 60px;
+}
+
+.juice {
+    margin-top: 60px;
+    height: 455px;
+    background-color: #e8e8e8;
+    /* text-align: center; */
+    overflow: hidden;
+}
+
+.img-juice {
+    /* float: right; */
+    position: absolute;
+    width: 50%;
+    right: 0px;
+}
+
+.frappe {
+    position: relative;
+    height: 577px;
+    margin-top: 80px;
+}
+
+.img-frappe {
+    left: 100px;
+    position: absolute;
+    animation: img-coffee 0.8s ease-out;
+}
+
+.coffee {
+    position: relative;
+    height: 557px;
+}
+
+.img-coffee {
+    float: right;
+    position: absolute;
+    right: 100px;
+    animation: img-coffee 0.7s ease-out;
+}
+
+@keyframes img-coffee{
+    from{ transform: translate(-50%,50%)}
+    to{transform: translate(0,0)}
+}
+
+p.description-item {
+    clear: both;
+    font-size: 15px;
+    color: #807272;
+    text-align: left;
+}
+
+span.price-item {
+    float: right;
+    font-size: 16px;
+    color: #646464;
+    margin-right: 20px;
+    transition : 0.5s ease-out;
+}
+
+.title-item {
+    font-size: 19px;   
+    font-weight: 450;
+    float: left;
+    color: #646464;
+}
+
+h3.title {
+    font-size: 30px;
+    color: #52331d;
+    text-transform: uppercase;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 50px;
+    background-color: #E8E8E8;
+    position: relative;
+    z-index: 100;
+   /* text-shadow: 4px 3px 5px;*/
+}
+
+li.item {
+     list-style: none;
+    /* margin-top: -7px; */
+    height: 65px;
+    /* box-sizing: border-box; */
+    position: relative;
+}
+
+.list-coffee, .list-frappe {
+    width: 470px;
+    height: 470px;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    /* padding: 30px 20px; */
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    left: 100px;
+    top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow:  0 0 67px rgb(84, 88, 90);
+    
+}
+
+ul.list-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+ul.list-scroll::-webkit-scrollbar-thumb {
+    background: #92e8db;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+ul.list-scroll::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+ul.list-scroll {
+    /* height: 350px; */
+    /* overflow: auto  ; */
+    padding: 20px 5px;
+    /* position: relative; */
+}
+
+ul.list-scroll:hover{
+    animation-play-state: paused;
+}
+
+ul.list-scroll {
+    margin: 0px 20px 30px;
+    /* transform: translate3d(0, 0, 0); */
+    animation: moveSlideshow 10s linear infinite;
+}
+
+@keyframes moveSlideshow {
+    /* 45%{
+        transform: translateY(-100%); 
+        
+    }
+    90% { 
+        transform: translateY(0);  
+        
+    } */
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(370px);
+    }
+}
+
+.list-frappe {
+    right: 100px !important;
+    left: unset;
+    overflow: hidden;
+}
+
+.title_drinks h3 {
+    font-size: 30px;
+    color: #52331d;
+}
+
+.title_drinks p {
+    font-size: 20px;
+    color: #806e63;
+    font-weight: 100;
+}
+
+.drinks {
+    text-align: center;
+}
+
+.title_drinks {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+a.cart-drink, a.cart-pastry{    
+    transition:0.5s ease-out;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    font-size: 24px;
+    right: 10px;
+    color: #52331D !important; 
+    transform : scale(0);
+    z-index : 50;
+    display: block;
+}
+a.cart-drink:hover ,a.cart-pastry:hover {
+	transform : scale(1.3);
+}
+
+.bottom-drink ul li:hover a.cart-drink,.bottom-pastry ul li:hover a.cart-pastry {
+	transform : scale(1);
+	opacity: 0.7;
+}
+.bottom-drink ul li:hover span.price-drink,.bottom-pastry ul li:hover span.price-pastry{
+	transform: scale(0);
+}
+.line-item{
+	width: 100%;
+    height: 1px;
+    background: #A69E9E;
+    opacity: 0.5;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    bottom: 4px;
+    box-shadow: 10px 20px 30px blue;  
+}
+
+
+a.drink-page{
+	right: 31px;
+	top: 7px;
+}
+a.drink-page:hover{
+	transform : scale(2);
+}
+li.item:hover span.price-item{
+	transform: scale(0);
+}
+li.item:hover a.cart-drink{
+	transform: scale(1.3);
+    opacity: 0.8;
+}
+.img-frappe img, .img-coffee img {
+    max-width: 870px;
+    max-height: 557px;
+}
